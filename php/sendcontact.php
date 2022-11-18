@@ -25,6 +25,13 @@ if ($_POST) {
         array_push($errors, "Message is required.");
     }
     // check the rest
+    //checks our message and cleans it
+//if(isset($_POST['message']) && !empty($_POST['message'])) {
+   // $clean = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+   // $message = htmlspecialchars($clean);
+//}else{
+//array_push($fail, "message");
+//}
 
 // Sanitize the values
 
