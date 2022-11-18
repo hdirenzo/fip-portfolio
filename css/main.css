@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F1EE;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pfp {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.logo {
+  height: 120px;
+}
+
+.instaLogo {
+  height: 30px;
+}
+
+.ytLogo {
+  height: 30px;
+  width: 33px;
+}
+
+h2 {
+  font-weight: lighter;
+  letter-spacing: 11px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #6c634c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+input[type=submit]:hover {
+  background-color: #9e9a90;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#proj1 {
+  background-color: #6c634c;
+  color: white;
+  padding: 180px 100px;
+  border: none;
+  border-radius: 2px;
+}
+
+#proj1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+  display: grid;
+  grid-column-start: 1;
+  padding-top: 80px;
+  padding-left: 75px;
+}
+
+.logo {
+  width: 330px;
+  height: 85px;
+}
+
+.instaLogo {
+  padding-right: 10px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #787878;
+  text-decoration: none;
+}
+
+.navigation {
+  display: grid;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Nav Content Content" "Nav Content Content" "Nav Content Content";
+}
+
+.Nav {
+  grid-area: Nav;
+}
+
+.mainArea-about {
+  padding-top: 140px;
+  padding-left: 0px;
+  padding-right: 110px;
+  line-height: 30px;
+  text-align: center;
+  grid-column: 2 span;
+}
+
+.socials {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.mainArea-projects {
+  padding-top: 90px;
+  padding-left: 0px;
+  padding-right: 130px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.proj1,
+.proj2,
+.proj3 {
+  background-color: #979282;
+  border-radius: 3%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.proj1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.proj2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.proj3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formContainer {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+#titlecontact {
+  text-align: center;
+}
+
+.mainArea-photos {
+  padding-top: 80px;
+  padding-left: 0px;
+  padding-right: 110px;
+  line-height: 30px;
+  grid-column: 2 span;
+}
+
+.mainVid {
+  grid-column: 2 span;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.avatar {
+  max-width: 90px;
+  float: right;
+  margin-top: 45px;
+}
+
+.western {
+  padding-right: 110px;
+  padding-bottom: 13px;
+  padding-top: 20px;
+}
+
+.mainArea-demoreel {
+  padding-top: 80px;
+  padding-left: 150px;
+  padding-right: 0px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.mainArea-interview {
+  padding-top: 80px;
+  padding-right: 0px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

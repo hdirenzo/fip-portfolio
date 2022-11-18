@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Hannuccia | Portfolio - CONTACT</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/icon_me.png">
+    <style type="text/css">
+        * {
+            cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur270.cur), auto !important;
+        }
+    </style><a href="https://www.cursors-4u.com/cursor/2011/12/01/light-brown-pointer.html" target="_blank"
+        title="Light Brown Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0"
+            alt="Light Brown Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+</head>
+
+<body>
+
+
+    <section class="navigation">
+        <nav>
+            <a href="#"><img class="logo" src="imgs/logo_black.png" alt="logo"></a>
+            <!--change this to a svg logo-->
+            <img class=pfp src="imgs/pfp.jpg">
+            <ul class="navi">
+                <li><a href="#">ABOUT</a></li>
+                <br>
+
+                <li><a href="#">PROJECTS</a></li>
+                <br>
+
+                <li><a href="#">CONTACT</a></li>
+
+                <!--add in href links-->
+
+            </ul>
+            <div class="socials">
+                <a href="https://www.instagram.com/hannahdirenzo/?hl=en"><img class="instaLogo"
+                        src="imgs/img_instagram.png" alt="instagram"></a>
+                <a href="#"><img class="ytLogo" src="imgs/img_youtube.png" alt="youtube"></a>
+
+            </div>
+        </nav>
+        <!-------------------------------------------------------------------->
+
+
+
+        <div class="formContainer">
+            <h2 id="titlecontact">CONTACT</h2>
+
+            <!----------->
+            <form action="php/sendcontact.php" method="POST" id="mail-form">
+                <!------------>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="subject">Message</label>
+                <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+
+
+
+
+                <input type="submit" value="Submit">
+
+            </form>
+            <p id="status-message"></p>
+            <ul id="errors"></ul>
+        </div>
+        <script src="js/modules/sendcontact.js"></script>
+</body>
+
+
+</html>
