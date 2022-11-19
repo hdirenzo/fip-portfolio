@@ -56,7 +56,9 @@ if ($_POST) {
             echo json_encode($response);
         }
         else{
-            echo json_encode(["message" => "Whoops, Error Sending e-mail"]);
+            $response["message"] = "Whoops, Error Sending e-mail";
+            die(json_encode($response));
+            //echo json_encode(["message" => "Whoops, Error Sending e-mail"]);
         }
     }    
     // Not valid
