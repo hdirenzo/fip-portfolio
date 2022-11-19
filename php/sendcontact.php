@@ -24,36 +24,39 @@ if ($_POST) {
     if (empty($message)) {
         array_push($errors, "Message is required.");
     }
-    // check the rest
-    //checks our message and cleans it
-//if(isset($_POST['message']) && !empty($_POST['message'])) {
-   // $clean = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-   // $message = htmlspecialchars($clean);
-//}else{
-//array_push($fail, "message");
-//}
 
-// Sanitize the values
+    // Sanitize the values
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    $message = filter_var($message, FILTER_SANITIZE_STRING);
 
     // If is valid
     if (count($errors) === 0) {
-        ini_set('SMTP', 'smtp.ionos.com');
-        ini_set('smtp_port', '587');
         // Compose & send email
-        
-        $headers = "From: ".$email."\r\n".
-        "Reply-To: ' .$email. "."\r\n"."X-Mailer: PHP/
-        ".phpversion();
+        require_once "Mail.php";
 
-        $success = mail("hannuccia@renetwork.ca","Email from Hannuccia", $message);
+        // $success = mail("hannuccia@renetwork.ca","Email from Hannuccia", $message);
+        $mail = Mail::factory('smtp', [
+            'host' => 'smtp.ionos.com',
+            'port' => '587',
+            'auth' => true,
+            'username' => 'support@hannuccia.com',
+            'password' => '_Pantone1999_9991'
+        ]);
+
+        $success = $mail->send('support@hannuccia.com', [
+            'From' => $email,
+            'Reply-To' => $email,
+            'Subject' => 'Business inquiry from ' . $name
+        ], $message);
 
         // Respond with success message
-        if($success){
-            $response["message"] = "Sent Successfully, Thank You";
+        if(!PEAR::isError($success)){
+            $response["message"] = "Sent Successfully, We will be in contact with you soon! (:";
             echo json_encode($response);
         }
         else{
-            echo json_encode(["message" => "Error Sending e-mail"]);
+            echo json_encode(["message" => "Whoops, Error Sending e-mail"]);
         }
     }    
     // Not valid
