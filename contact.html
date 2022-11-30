@@ -20,60 +20,66 @@
 <body>
 
 
-    <section class="navigation">
-        <nav>
-            <a href="#"><img class="logo" src="imgs/logo_black.png" alt="logo"></a>
-            <!--change this to a svg logo-->
-            <img class=pfp src="imgs/pfp.jpg">
-            <ul class="navi">
-                <li><a href="about.html">ABOUT</a></li>
+    
+        <section class="navigation">
+            <nav>
+                <a href="#"><img class="logo" src="imgs/logo_black.png" alt="logo"></a>
+                <p id="navBio">Designer, Photographer, & Storyteller</p>
                 <br>
+                <!--change this to a svg logo-->
+                <img class=pfp src="imgs/photography/img_pfp_white.jpg">
 
-                <li><a href="projects.html">PROJECTS</a></li>
-                <br>
+                <ul class="navi">
+                    <br>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <br>
 
-                <li><a href="contact.html">CONTACT</a></li>
 
-                <!--add in href links-->
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <br>
 
-            </ul>
-            <div class="socials">
-                <a href="https://www.instagram.com/hannahdirenzo/?hl=en"><img class="instaLogo"
-                        src="imgs/img_instagram.png" alt="instagram"></a>
-                <a href="#"><img class="ytLogo" src="imgs/img_youtube.png" alt="youtube"></a>
+                    <li><a href="contact.html">CONTACT</a></li>
 
+                    <!--add in href links-->
+
+                </ul>
+                <div class="socials">
+                    <a href="whoops.html"><img class="instaLogo" src="imgs/img_instagram.png" alt="instagram"></a>
+                    <a href="whoops.html"><img class="ytLogo" src="imgs/img_youtube.png" alt="youtube"></a>
+
+                </div>
+            </nav>
+            <!-------------------------------------------------------------------->
+
+
+
+            <div class="formContainer">
+                <h2 id="titlecontact">CONTACT</h2>
+                <p>Let's work together! Please contact me below! (:</p>
+
+                <!----------->
+                <form action="php/sendcontact.php" method="POST" id="mail-form">
+                    <!------------>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+                    <label for="subject">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+
+
+
+
+                    <input type="submit" value="Submit">
+
+                </form>
+                <p id="status-message"></p>
+                <ul id="errors"></ul>
             </div>
-        </nav>
-        <!-------------------------------------------------------------------->
-
-
-
-        <div class="formContainer">
-            <h2 id="titlecontact">CONTACT</h2>
-
-            <!----------->
-            <form action="php/sendcontact.php" method="POST" id="mail-form">
-                <!------------>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
-
-                <label for="subject">Message</label>
-                <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
-
-
-
-
-                <input type="submit" value="Submit">
-
-            </form>
-            <p id="status-message"></p>
-            <ul id="errors"></ul>
-        </div>
-        <script src="js/modules/sendcontact.js"></script>
+            <script src="js/modules/sendcontact.js"></script>
 </body>
 
 

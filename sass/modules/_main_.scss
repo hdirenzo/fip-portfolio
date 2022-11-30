@@ -21,8 +21,8 @@ ul {
 
 .pfp {
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .logo {
@@ -95,9 +95,13 @@ input[type=submit]:hover {
 
 nav {
     display: grid;
+    grid-column: 1;
     grid-column-start: 1;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-left: 75px;
+    max-height: 80vh;
+    position: fixed;
+
 }
 
 .logo {
@@ -124,6 +128,7 @@ a:hover {
         "Nav Content Content"
         "Nav Content Content"
         "Nav Content Content";
+
 }
 
 .Nav {
@@ -132,7 +137,7 @@ a:hover {
 
 .mainArea-about {
     padding-top: 140px;
-    padding-left: 0px;
+    padding-left: 400px;
     padding-right: 110px;
     line-height: 30px;
     text-align: center;
@@ -146,8 +151,8 @@ a:hover {
 
 .mainArea-projects {
     padding-top: 90px;
-    padding-left: 0px;
-    padding-right: 130px;
+    padding-left: 650px;
+    padding-right: px;
     line-height: 30px;
     text-align: center;
 }
@@ -179,7 +184,7 @@ a:hover {
 
 .formContainer {
     padding-top: 100px;
-    padding-left: 50px;
+    padding-left: 580px;
     padding-right: 30px;
 
 }
@@ -197,9 +202,11 @@ a:hover {
 }
 
 .mainVid {
-    grid-column: 2 span;
-    overflow-x: hidden;
-    height: 100%;
+    padding-left: 500px;
+    overflow: hidden;
+
+
+
 }
 
 .avatar {
@@ -216,7 +223,15 @@ a:hover {
 
 .mainArea-demoreel {
     padding-top: 80px;
-    padding-left: 150px;
+    padding-left: 550px;
+    padding-right: 0px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.mainArea-ceci {
+    padding-top: 80px;
+    padding-left: 600px;
     padding-right: 0px;
     line-height: 18px;
     text-align: center;
@@ -224,7 +239,57 @@ a:hover {
 
 .mainArea-interview {
     padding-top: 80px;
-    padding-right: 0px;
+    padding-left: 570px;
     line-height: 18px;
     text-align: center;
+}
+
+.mainArea-photos {
+    padding-top: 80px;
+    grid-area: 2, 3;
+    padding-left: 400px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#navBio {
+    font-size: medium;
+    margin-left: 7px;
+    color: #644a24;
+}
+
+.instaCeci {
+    padding-top: 30px;
+
+}
+
+.bannerCeci {
+    margin-right: 15px;
+    padding-left: 35px;
+    padding-bottom: 120px;
+}
+
+#heroVid {
+    border-bottom-left-radius: 500px * 2;
+    border-top-left-radius: 500px * 2;
+    position: fixed;
+
+}
+
+/////////footer/////////
+//.logoAdobe {
+//  padding-bottom: 0px;
+//  padding-left: 40px;
+
+//}
+
+//footer {
+//  display: block;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+
+// .fullLogo {}
+.hoverer:hover {
+    opacity: 40%;
 }
