@@ -18,14 +18,27 @@ window.addEventListener('load', async function onWindowLoaded() {
 
     for (const photo of photos) {
         // create an html <img> element using the file_name and alt_text
+        const container = document.createElement('div')
+        container.classList.add('gallery__photo')
+
         const img = document.createElement('img')
         img.src = photo.file_name
         img.alt = photo.alt_text
-        img.classList.add('hoverer')
         img.width = 600
 
+        const overlay = document.createElement('div')
+        overlay.classList.add('overlay')
+
+        const desc = document.createElement('p')
+        desc.textContent = photo.desc_text
+
+        container.appendChild(img)
+
+        overlay.appendChild(desc)
+        container.appendChild(overlay)
+
         // add the <img> element to the document
-        gallery.appendChild(img)
+        gallery.appendChild(container)
 
         // ???
 

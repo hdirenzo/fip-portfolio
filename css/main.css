@@ -259,4 +259,35 @@ a:hover {
   opacity: 40%;
 }
 
+.gallery__photo {
+  position: relative;
+}
+
+/*relative to this image */
+.gallery__photo img {
+  display: block;
+}
+
+.gallery__photo .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.gallery__photo:hover .overlay {
+  display: block;
+}
+
+.gallery__photo .overlay p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*# sourceMappingURL=main.css.map */
