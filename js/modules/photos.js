@@ -25,17 +25,19 @@ window.addEventListener('load', async function onWindowLoaded() {
         img.src = photo.file_name
         img.alt = photo.alt_text
         img.width = 600
-
-        const overlay = document.createElement('div')
-        overlay.classList.add('overlay')
-
-        const desc = document.createElement('p')
-        desc.textContent = photo.desc_text
-
         container.appendChild(img)
 
-        overlay.appendChild(desc)
-        container.appendChild(overlay)
+        // If there is a description, add an overlay to the container
+        if (photo.desc_text) {
+            const overlay = document.createElement('div')
+            overlay.classList.add('overlay')
+
+            const desc = document.createElement('p')
+            desc.textContent = photo.desc_text
+
+            overlay.appendChild(desc)
+            container.appendChild(overlay)
+        }
 
         // add the <img> element to the document
         gallery.appendChild(container)
