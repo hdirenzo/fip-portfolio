@@ -261,6 +261,8 @@ a:hover {
 
 .gallery__photo {
   position: relative;
+  max-width: 600px;
+  margin: auto;
 }
 
 /*relative to this image */
