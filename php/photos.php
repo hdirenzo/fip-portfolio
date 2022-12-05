@@ -3,19 +3,21 @@
 // Set the content type to tell the browser that we are responding with JSON content (not text)
 header('Content-Type: application/json');
 
-// $user = 'root';
-// $password = 'MochaBella123!';
-// $db = 'db_photos';
-// $host = 'localhost';
-// $port = 8889;
-$host = 'db5011037397.hosting-data.io';
-  $db = 'dbs9328608';
-  $user = 'dbu1321714';
-  $password = 'MochaBella123!';
-$port = 3306;
+$user = 'root';
+$password = 'MochaBella123!';
+$db = 'db_photos';
+$host = 'localhost';
+$port = 8889;
+// $host = 'db5011037397.hosting-data.io';
+//   $db = 'dbs9328608';
+//   $user = 'dbu1321714';
+//   $password = 'MochaBella123!';
+// $port = 3306;
+
 
 // Open connection to the database
 $connection = mysqli_connect($host, $user, $password, $db, $port);
+// $connection = mysqli_connect($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], $_ENV['DB_DATABASE'], $_ENV['DB_PORT']);
 
 if (!$connection) {
     die("Could not connect to MySQL!");

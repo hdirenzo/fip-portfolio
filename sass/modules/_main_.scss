@@ -4,6 +4,7 @@ body {
     height: 100vh;
 }
 
+////nav////
 a {
     text-decoration: none;
     color: black;
@@ -45,7 +46,7 @@ h2 {
     letter-spacing: 11px;
 }
 
-
+///form////
 input[type=text],
 select,
 textarea {
@@ -81,6 +82,7 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+///projects/////
 #proj1 {
     background-color: #6c634c;
     color: white;
@@ -93,6 +95,7 @@ input[type=submit]:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+///nav////
 nav {
     display: grid;
     grid-column: 1;
@@ -135,6 +138,7 @@ a:hover {
     grid-area: Nav;
 }
 
+////content/////
 .mainArea-about {
     padding-top: 140px;
     padding-left: 400px;
@@ -293,3 +297,23 @@ a:hover {
 .hoverer:hover {
     opacity: 40%;
 }
+
+////screen sizing///////
+// @media screen and (max-width: 700px) {
+//     #heroVid {
+//         display: none;
+//     }
+
+//     section.mainArea-about,
+//     section.mainArea-projects,
+//     section.mainArea-demoreel,
+//     section.mainArea-photos,
+//     section.mainArea-ceci,
+//     section.mainArea-interview,
+//     section.formContainer {
+//         padding: 0%;
+//         display: flex;
+//     }
+
+
+// }
